@@ -1,6 +1,11 @@
-¡Hola! 👋 Soy Juan Murcia, un apasionado del desarrollo web.
-En este portafolio encontrarás algunos de mis proyectos más destacados. ¡Espero que te gusten! 🎨🚀
+# ¡Hola! 👋  
+## Soy Juan Murcia, un apasionado del desarrollo web.  
 
-📩 Contáctame
-📧 Email: juancamilomurcialedesma03@gmail.com
-🐙 GitHub: github.com/JotaKs
+En este portafolio encontrarás algunos de mis **proyectos más destacados**.  
+¡Espero que te gusten! 🎨🚀  
+
+---
+
+## 📩 Contáctame  
+- 📧 **Email:** juancamilomurcialedesma03@gmail.com  
+- 🐙 **GitHub:** [github.com/JotaKs](https://github.com/JotaKs)  
