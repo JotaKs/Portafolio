@@ -2,157 +2,332 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <title>Juan Murcia | Desarrollador</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
-    <meta content="Themesbrand" name="author">
-    <link href="assets\css\bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
-    <link href="assets\css\icons.min.css" rel="stylesheet" type="text/css">
-    <link href="assets\css\app.min.css" id="app-style" rel="stylesheet" type="text/css">
-    
-    <style>
-        .full-height {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
+    <meta content="Portafolio web" name="description">
+    <meta content="JuanMurcia" name="author">
+    <link rel="shortcut icon" href="assets/img/icono.png">
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#topnav-menu" data-offset="60">
+<body class="section bg-ico-hero">
 
-    <nav class="navbar navbar-expand-lg navigation fixed-top sticky">
-        <div class="container">
-
-
-            <button type="button" class="btn btn-sm px-3 font-size-16 d-lg-none header-item waves-effect waves-light"
-                data-toggle="collapse" data-target="#topnav-menu-content">
-                <i class="fa fa-fw fa-bars"></i>
-            </button>
-
-            <div class="collapse navbar-collapse" id="topnav-menu-content">
-                <ul class="navbar-nav ml-auto" id="topnav-menu">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#info">Sobre mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Educación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#competencies">Competencias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#news">Colaboraciones</a>
-                    </li>
-                </ul>
+    <section class="d-flex flex-column justify-content-center align-items-center min-vh-100" id="inicio">
+        <div class="content-box-two text-center bg-one">
+            <div class="d-flex flex-wrap justify-content-around bg-four">
+                <a id="btn-juan-murcia" class="m-0 fs-13">JUAN MURCIA</a>
             </div>
         </div>
-    </nav>
-
-    <div class="floating-widget">
-        <div class="col-6 py-1 pl-1 pr-0 d-flex align-items-center justify-content-center">
-            <i class="bx bxl-whatsapp" style="font-size: 40px;"></i>
-        </div>
-        <div class="col-6 p-1">
-            <div class="cuadrado d-flex align-items-center justify-content-center">
-                <i class="bx bx-chevron-left" style="font-size: 25px;"></i>
+        <div class="content-box-one text-center bg-two">
+            <div id="titulo-container" class="titulo-visible">
+                <div id="titulo-contenido">
+                    <h1 id="titulo" class="m-0 fs-34">PORTAFOLIO</h1>
+                </div>
+            </div>
+            <div id="tabla-container" class="tabla-hidden">
+                <table class="table m-0">
+                    <tbody id="tabla-contenido">
+                    </tbody>
+                </table>
             </div>
         </div>
-    </div>
-
-    <div class="particle-container">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
-
-    <section class="section hero-section bg-ico-hero" id="home">
-        <div class="particle-container"></div>
-        <div class="bg-overlay"></div>
-        <div class="container">
-            <div class="row align-items-center justify-content-center" style="height: 100vh;">
-                <div class="col-lg-5">
-                    <div class="text-white-50">
-                        <h1 class="text-white font-weight-semibold hero-title"
-                            style="font-size: 3em; font-weight: 900; letter-spacing: -0.035em; line-height: 1em;">Juan
-                            Murcia</h1>
-                        <p style="font-size: 1.65em;">Desarrollador Front-End</p>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-8 col-sm-10 d-flex justify-content-center">
-
-                </div>
+        <div class="content-box-two text-center bg-tree">
+            <div class="d-flex flex-wrap justify-content-around">
+                <a id="btn-educacion" class="m-0 fs-12">EDUCACIÓN</a>
+                <a id="btn-perfil" class="m-0 fs-12">PERFIL</a>
+                <a id="btn-proyectos" class="m-0 fs-12">PROYECTOS</a>
             </div>
         </div>
     </section>
 
-    <!-- JAVASCRIPT -->
-    <script src="assets\libs\jquery\jquery.min.js"></script>
-    <script src="assets\libs\bootstrap\js\bootstrap.bundle.min.js"></script>
-    <script src="assets\libs\metismenu\metisMenu.min.js"></script>
-    <script src="assets\libs\simplebar\simplebar.min.js"></script>
-    <script src="assets\libs\node-waves\waves.min.js"></script>
 
-    <script src="assets\libs\jquery.easing\jquery.easing.min.js"></script>
 
-    <!-- Plugins js-->
-    <script src="assets\libs\jquery-countdown\jquery.countdown.min.js"></script>
+    <style>
+        .content-box-one {
+            padding: 1.5vw;
+        }
 
-    <!-- owl.carousel js -->
-    <script src="assets\libs\owl.carousel\owl.carousel.min.js"></script>
+        .content-box-two {
+            padding: 0.5vw;
+        }
 
-    <!-- ICO landing init -->
-    <script src="assets\js\pages\ico-landing.init.js"></script>
+        .content-box-one,
+        .content-box-two {
+            width: 40vw;
+            min-width: 300px;
+            max-width: 90vw;
+            transition: width 0.5s ease-in-out;
+            font-family: 'Montserrat', sans-serif;
+        }
 
-    <script src="assets\js\app.js"></script>
+        .bg-one {
+            background-color: #346e94;
+            color: white !important;
+        }
+
+        .bg-two {
+            background-color: white;
+            color: #134261 !important;
+        }
+
+        .bg-tree {
+            background-color: #134261;
+            color: white !important;
+        }
+
+        .bg-tree a {
+            color: white !important;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .bg-tree a:hover {
+            color: #b0b0b0 !important;
+        }
+
+        .bg-four a {
+            color: white !important;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .bg-four a:hover {
+            color: #a7bfcf !important;
+        }
+
+        .fs-13 {
+            font-size: clamp(9px, 0.7vw, 16px);
+            letter-spacing: clamp(1px, 0.15vw, 3px);
+            cursor: pointer;
+        }
+
+        .fs-12 {
+            font-size: clamp(8px, 0.6vw, 14px);
+            letter-spacing: clamp(1px, 0.12vw, 2px);
+            cursor: pointer;
+        }
+
+        .fs-34 {
+            font-size: clamp(30px, 2vw, 48px);
+            letter-spacing: clamp(2px, 0.5vw, 5px);
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .expanded {
+            width: 50vw !important;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        .text-primary {
+            color: blue;
+        }
+
+        .text-success {
+            color: green;
+        }
+
+        .table {
+            border-collapse: collapse;
+        }
+
+        .table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .transition {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .tabla-hidden {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s ease-in-out, opacity 0.5s ease-in-out;
+        }
+
+        .tabla-visible {
+            opacity: 1;
+            max-height: var(--current-height, auto);
+            transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+
+        .table {
+            font-size: 0.8rem;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        #titulo-container {
+            opacity: 1;
+            max-height: var(--current-height, 200px);
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+
+        #titulo-container.titulo-hidden {
+            opacity: 0;
+            max-height: 0;
+            transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+
+        #titulo-container.titulo-visible {
+            opacity: 1;
+            max-height: 500px;
+        }
+
+        /* Media query mejorada */
+        @media (max-width: 991.98px) {
+            #tabla-container {
+                width: 100% !important;
+                display: flex !important;
+                justify-content: center !important;
+            }
+
+            #tabla-container .table {
+                width: 100% !important;
+                min-width: 300px !important;
+                max-width: 100% !important;
+            }
+
+            .content-box-one,
+            .content-box-two {
+                width: 80vw !important;
+            }
+
+            .content-box-one.expanded,
+            .content-box-two.expanded {
+                width: 90vw !important;
+            }
+        }
+    </style>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const particleContainer = document.querySelector('.particle-container');
+        document.addEventListener("DOMContentLoaded", function () {
+            let titulo = document.getElementById("titulo");
+            let tablaContainer = document.getElementById("tabla-container");
+            let tablaContenido = document.getElementById("tabla-contenido");
 
-            function createParticle() {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
+            function mostrarTabla(contenido) {
+                // Primero animamos la desaparición del título
+                document.getElementById("titulo-container").classList.remove("titulo-visible");
+                document.getElementById("titulo-container").classList.add("titulo-hidden");
+                // Esperamos a que termine la animación del título
+                setTimeout(() => {
 
-                const size = Math.random() * 20 + 10;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
+                    // Si la tabla ya está visible, primero la colapsamos
+                    if (tablaContainer.classList.contains("tabla-visible")) {
+                        const currentHeight = tablaContainer.scrollHeight;
+                        tablaContainer.style.maxHeight = currentHeight + 'px';
 
-                const blur = (30 - size) / 2;
-                const opacity = 1 - (size / 40);
-                particle.style.filter = `blur(${blur}px)`;
-                particle.style.opacity = `${opacity}`;
+                        requestAnimationFrame(() => {
+                            tablaContainer.style.maxHeight = '0';
+                            tablaContainer.style.opacity = '0';
 
-                const startX = Math.random() * -20;
-                const startY = Math.random() * 100;
-                particle.style.top = `${startY}vh`;
-                particle.style.left = `${startX}vw`;
-
-                const minDuration = 20;
-                const maxDuration = 60;
-                const durationFactor = (size - 10) / 20;
-                const animationDuration = minDuration + (1 - durationFactor) * (maxDuration - minDuration);
-                const animationDelay = Math.random() * 10;
-                particle.style.animation = `move ${animationDuration}s linear infinite`;
-                particle.style.animationDelay = `-${animationDelay}s`;
-
-                particleContainer.appendChild(particle);
+                            setTimeout(() => {
+                                mostrarNuevoContenido(contenido);
+                            }, 400);
+                        });
+                    } else {
+                        mostrarNuevoContenido(contenido);
+                    }
+                }, 400); // Tiempo igual a la duración de la animación del título
             }
 
-            for (let i = 0; i < 30; i++) {
-                createParticle();
+            function mostrarNuevoContenido(contenido) {
+                tablaContainer.style.display = "block";
+                tablaContenido.innerHTML = contenido;
+
+                const newHeight = tablaContainer.scrollHeight;
+                tablaContainer.style.maxHeight = '0';
+                tablaContainer.style.opacity = '0';
+
+                void tablaContainer.offsetWidth;
+
+                tablaContainer.style.maxHeight = newHeight + 'px';
+                tablaContainer.style.opacity = '1';
+                tablaContainer.classList.add("tabla-visible");
             }
+
+            function mostrarTitulo() {
+                // Primero animamos la tabla para ocultarla
+                const currentHeight = tablaContainer.scrollHeight;
+                tablaContainer.style.maxHeight = currentHeight + 'px';
+                void tablaContainer.offsetWidth;
+                tablaContainer.style.maxHeight = '0';
+                tablaContainer.style.opacity = '0';
+                tablaContainer.classList.remove("tabla-visible");
+                // Esperamos a que termine la animación de la tabla
+                setTimeout(() => {
+
+
+                    // Mostramos el título con animación
+
+                    document.getElementById("titulo-container").classList.remove("titulo-hidden");
+                    document.getElementById("titulo-container").classList.add("titulo-visible");
+                }, 1100);
+
+            }
+
+            // Eventos para cada botón usando su ID
+            document.getElementById("btn-educacion").addEventListener("click", function () {
+                mostrarTabla(`
+                <tr><td>Especialista en Desarrollo de Software</td><td>Corporación Universitaria Minuto de Dios</td><td class="text-primary">EN PROGRESO</td></tr>
+                <tr><td>Ingeniero de Sistemas</td><td>Fundación Universitaria de Popayán</td><td class="text-success">CERTIFICADO</td></tr>
+            `);
+            });
+
+            document.getElementById("btn-perfil").addEventListener("click", function () {
+                mostrarTabla(`
+                <tr><td>Perfil profesional</td><td>Desarrollador Full Stack</td></tr>
+                <tr><td>Idiomas</td><td>Español (Nativo), Inglés (Intermedio)</td></tr>
+                <tr><td>Front-End</td><td>Angular, Next.js, Bootstrap, Tailwind CSS, TypeScript</td></tr>
+                <tr><td>Back-End</td><td>C# (.NET), Java (Spring), Node.js, Python, PHP</td></tr>
+                <tr><td>Bases de datos</td><td>Oracle, MySQL, SQL Server, MongoDB</td></tr>
+                <tr><td>Herramientas</td><td>Git, Postman, APIs REST, Scrum</td></tr>
+                
+            `);
+            });
+
+            document.getElementById("btn-proyectos").addEventListener("click", function () {
+                mostrarTabla(`
+                <tr><td>Sistema de Gestión de Inventarios</td><td>Aplicación web para el control de inventarios</td></tr>
+                <tr><td>Dashboard de Análisis de Datos</td><td>Plataforma interactiva con gráficos</td></tr>
+                <tr><td>Portafolio Web</td><td>Diseño y desarrollo de un portafolio profesional</td></tr>
+            `);
+            });
+
+            // Evento para el botón "JUAN MURCIA"
+            document.getElementById("btn-juan-murcia").addEventListener("click", function () {
+                mostrarTitulo();
+            });
         });
     </script>
+   <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/libs/jquery-countdown/jquery.countdown.min.js"></script>
+    <script src="assets/libs/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/js/pages/ico-landing.init.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
